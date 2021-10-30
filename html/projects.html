@@ -13,240 +13,219 @@
   </head>
   <body>
     <!--  Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light py-4">
-        <div class="container">
-            <a href="../index.html" class="navbar-brand">Home</a>
-            <button 
-                class="navbar-toggler" 
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navmenu"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a href="./resume.html" class="nav-link">Resume</a>
+    <nav class="navbar navbar-expand-md navbar-light mb-2 shadow-sm">
+        <div class="container justify-content-center px-0">
+            <div class="text-center">
+                <button 
+                    class="navbar-toggler" 
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navmenu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="collapse navbar-collapse text-center" id="navmenu">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-2">
+                        <a href="../index.html" class="nav-link">Home</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="./projects.html" class="nav-link">Projects</a>
+                    <li class="nav-item mx-2">
+                        <a href="../rsc/Resume.pdf" class="nav-link" target="_blank">Resume</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#coursework" class="nav-link">Coursework</a>
+                    <li class="nav-item mx-2">
+                        <a href="./work.html" class="nav-link">Work</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#contact" class="nav-link">Contact</a>
+                    <li class="nav-item mx-2">
+                        <a href="./projects.html" class="nav-link active">Projects</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a href="./coursework.html" class="nav-link">Coursework</a>
                     </li>
                 </ul>
+                <div class="ms-auto">
+                    <!-- Email -->
+                    <a href="https://github.com/cadenhowell/Music-For-The-Moment" target="-blank" class="btn btn-white btn-lg ms-md-auto rounded-circle shadow-sm"><i class="bi bi-envelope"></i></a>
+                    <!-- <a class="btn btn-lg m-1 shadow-sm" href="mailto: cadenhowell0322@gmail.com" role="button" style="border-radius: 100px;">
+                        <i class="bi bi-envelope"></i>
+                    </a> -->
+                
+                    <!-- Linkedin -->
+                    <a class="btn btn-lg m-1 shadow-sm" href="https://www.linkedin.com/in/caden-howell/" role="button" style="border-radius: 100px;">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                
+                    <!-- Github -->
+                    <a class="btn btn-lg m-1 shadow-sm" href="https://github.com/cadenhowell" role="button" style="border-radius: 100px;">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
 
-    <!--Coursework-->
-    <section class="p-5 bg-dark">
-        <div class="container">
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-4 text-center justify-content-center">
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-laptop" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Music for the Moment</h5>
-                            <p>2021</p>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">Python</small>
-                        </div>
-                    </div>
+    <!--Projects-->
+    <div class="container w-75 mb-5 mt-4 p-4 shadow" style="border-radius: 10px;">
+        <div class="d-flex flex-wrap justify-content-md-start justify-content-center">
+            <div class="text-center">
+                <span class="text-primary fs-3 fw-bold">Music for the Moment</span>
+                <span class="fs-3 fw-bold"> • 2021</span>
+            </div>
+            <a href="https://github.com/cadenhowell/Music-For-The-Moment" target="-blank" class="btn btn-primary btn-lg ms-md-auto shadow">View Repo</a>
+        </div>
+        <div class="mb-2 text-center text-sm-start">
+            <p class="fs-3 fw-bold my-0">Description</p>
+            <span class="fs-5">
+                In this collaborative project, my team and I used sentiment and vocabulary analysis to make music recommendations from a 
+                Youtube playlist that match the mood of an environment. To do this, we leveraged several natural language processing APIs
+                to transcribe and analyze the user's dialogs.
+                
+            </span>
+        </div>
+        <div class="mb-2 text-center text-sm-start">
+            <p class="fs-3 fw-bold my-0">Languages</p>
+            <span class="fs-5">Python, IBM Watson, Firebase, Genius API</span>
+        </div>
+    </div>
+    <div class="container w-75 mb-5 p-4 shadow" style="border-radius: 10px;">
+        <div class="d-flex flex-wrap justify-content-md-start justify-content-center">
+            <div class="text-center">
+                <span class="text-primary fs-3 fw-bold">Language Modeling Research</span>
+                <span class="fs-3 fw-bold"> • 2021</span>
+            </div>
+            <a href="../rsc/nlp_paper.pdf" target="_blank" class="btn btn-primary btn-lg ms-md-auto shadow">View Paper</a>
+        </div>
+        <div class="mb-2 text-center text-sm-start">
+            <p class="fs-3 fw-bold my-0">Description</p>
+            <span class="fs-5">
+                My team modified a GPT-2 like transformer model to test how small changes in
+                the attention mechanism affect the performance of the model. The model we based our design on was 
+                <a href="https://github.com/huggingface/transformers">Hugging Face's PyTorch implementation of GPT-2.</a>
+                Changes were made to the PyTorch source files and perplexity was evaluated after a language-modeling task was completed.
+            </span>
+        </div>
+        <div class="mb-2 text-center text-sm-start">
+            <p class="fs-3 fw-bold my-0">Languages</p>
+            <span class="fs-5">Python, PyTorch</span>
+        </div>
+    </div>
+    <div class="container w-75 mb-5 p-4 shadow" style="border-radius: 10px;">
+        <div class="d-flex flex-wrap justify-content-md-start justify-content-center mb-2">
+            <div class="text-center">
+                <span class="text-primary fs-3 fw-bold">Orbit</span>
+                <span class="fs-3 fw-bold"> • 2019</span>
+            </div>
+            <a href="https://github.com/cadenhowell/orbit" target="_blank" class="btn btn-primary btn-lg ms-md-auto shadow">View Repo</a>
+        </div>
+        <img class="img-fluid my-2 w-100 rounded shadow" src="../rsc/orbit.gif"></img>
+        <div class="mb-2 text-center text-sm-start">
+            <p class="fs-3 fw-bold my-0">Description</p>
+            <span class="fs-5">
+                This project allows the user to simulate the orbital dynamics of k-body gravitational systems in three dimensions.
+                It was completed in Java 11 using the JavaFX library for graphics. I also chose to use modules and Maven to get a feel
+                for a true Java work and build environment.
+            </span>
+        </div>
+        <div class="mb-2 text-center text-sm-start">
+            <p class="fs-3 fw-bold my-0">Languages</p>
+            <span class="fs-5">Java, JavaFX, Maven</span>
+        </div>
+    </div>
+    <div class="container w-75 mb-5 p-4 shadow" style="border-radius: 10px;">
+        <div class="d-flex flex-wrap justify-content-md-start justify-content-center mb-2">
+            <div class="text-center">
+                <span class="text-primary fs-3 fw-bold">Tanks</span>
+                <span class="fs-3 fw-bold"> • 2018</span>
+            </div>
+            <a href="https://github.com/cadenhowell/Tanks" target="_blank" class="btn btn-primary btn-lg ms-md-auto shadow">View Repo</a>
+        </div>
+        <div id="carouselExampleIndicators" class="carousel slide my-4" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 8"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8" aria-label="Slide 9"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9" aria-label="Slide 10"></button>
+            </div>
+            <div class="carousel-inner shadow rounded">
+                <div class="carousel-item active">
+                    <img src="../rsc/tank_main.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-laptop" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Tanks</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">CS 396</small>
-                        </div>
-                    </div>
+                <div class="carousel-item">
+                    <img src="../rsc/tank_1.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-laptop" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Orbit</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">CS 349</small>
-                        </div>
-                    </div>
+                <div class="carousel-item">
+                  <img src="../rsc/tank_3.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-laptop" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Blackjack</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">CS 348</small>
-                        </div>
-                    </div>
+                <div class="carousel-item">
+                    <img src="../rsc/tank_4.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-laptop" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Language Modeling</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">CS 338</small>
-                        </div>
-                    </div>
+                <div class="carousel-item">
+                    <img src="../rsc/tank_5.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-laptop" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Design & Analysis of Algorithms</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">CS 336</small>
-                        </div>
-                    </div>
+                <div class="carousel-item">
+                    <img src="../rsc/tank_6.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-laptop" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Data Structures & Algorithms</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">CS 214</small>
-                        </div>
-                    </div>
+                <div class="carousel-item">
+                    <img src="../rsc/tank_7.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-laptop" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Introduction to Computer Systems</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">CS 213</small>
-                        </div>
-                    </div>
+                <div class="carousel-item">
+                    <img src="../rsc/tank_8.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-laptop" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Mathematical Foundations of Computer Science</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">CS 212</small>
-                        </div>
-                    </div>
+                <div class="carousel-item">
+                    <img src="../rsc/tank_9.png" class="d-block w-100" alt="...">
                 </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-calculator" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Fourier Analysis and Boundary Value Problems</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">MATH 351</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-calculator" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Multivariable Differential and Integral Calculus</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">MATH 252-1/2</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-calculator" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Differential Equations</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">GEN_ENG 206-4</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-brightness-high-fill" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Classical Mechanics</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">PHYSICS 330-1</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-plug" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Intro to Electrical Engineering</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">ELEC_ENG 202</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-cash-coin" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Microeconomics I</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">ECON 310-1</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="card h-100">
-                        <i class="bi bi-cash-coin" style="font-size: 1.5rem;"></i>
-                        <div class="card-body mb-1">
-                            <h5 class="card-title">Economics and Finance for Engineers</h5>
-                        </div>
-                        <div class="card-footer">
-                            <small class="text-muted">CIV_ENV 205-0</small>
-                        </div>
-                    </div>
+                <div class="carousel-item">
+                  <img src="../rsc/tank_2.png" class="d-block w-100" alt="...">
                 </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        <div class="mb-2 text-center text-sm-start">
+            <p class="fs-3 fw-bold my-0">Description</p>
+            <span class="fs-5">
+                Inspired by the game Wii Play Tanks, I wanted to make a multiplayer game in which two players could battle each other in various different maps.
+                Production of this game forced me to use thread-safe programming practices and the MVC
+            </span>
         </div>
-    </section>
-
-    <!--Footer-->
-    <footer class="bg-dark text-light text-center">
-        <div class="container py-4">
-            <!-- Email -->
-            <a class="btn btn-dark btn-outline-light btn-lg m-1" href="mailto: cadenhowell0322@gmail.com" role="button" style="border-radius: 15px;">
-                <i class="bi bi-envelope"></i>
-            </a>
-      
-            <!-- Linkedin -->
-            <a class="btn btn-dark btn-outline-light btn-lg m-1" href="https://www.linkedin.com/in/caden-howell/" role="button" style="border-radius: 15px;">
-                <i class="bi bi-linkedin"></i>
-            </a>
-      
-            <!-- Github -->
-            <a class="btn btn-dark btn-outline-light btn-lg m-1" href="https://github.com/cadenhowell" role="button" style="border-radius: 15px;">
-                <i class="bi bi-github"></i>
-            </a>
+        <div class="mb-2 text-center text-sm-start">
+            <p class="fs-3 fw-bold my-0">Languages</p>
+            <span class="fs-5">Java, Java Swing</span>
         </div>
-    </footer>
+    </div>
+    <div class="container w-75 mb-5 p-4 shadow" style="border-radius: 10px;">
+        <div class="d-flex flex-wrap justify-content-md-start justify-content-center mb-2">
+            <div class="text-center">
+                <span class="text-primary fs-3 fw-bold">Blackjack</span>
+                <span class="fs-3 fw-bold"> • 2017</span>
+            </div>
+        </div>
+        <img class="img-fluid my-2 w-100 rounded shadow" src="../rsc/blackjack.gif"></img>
+        <div class="mb-2 text-center text-sm-start">
+            <p class="fs-3 fw-bold my-0">Description</p>
+            <span class="fs-5">
+                Blackjack was my first major Java project. I decided I wanted it to have a GUI, so I used Java Swing. The OOP parts
+                of the code are pretty good. The front end looks good, but the code behind is a nightmare. Luckily I've come pretty far since
+                I first wrote that spaghetti in 2017.
+            </span>
+        </div>
+        <div class="mb-2 text-center text-sm-start">
+            <p class="fs-3 fw-bold my-0">Languages</p>
+            <span class="fs-5">Java, Java Swing</span>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>
